@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Container, Heading, Columns, Button } from 'react-bulma-components';
+import { Container, Heading, Columns } from 'react-bulma-components';
+import { Link } from "react-router-dom";
 import { Dropdown } from '../Components';
 
 const TEMP_ITEMS = [
@@ -76,7 +77,7 @@ export const Home = () => {
                     ))}
                 </div>
             </div>
-            <Button>Add New Location</Button>
+            <Link className="button" to="/location/create">Add New Location</Link>
         </Container>
     );
 };

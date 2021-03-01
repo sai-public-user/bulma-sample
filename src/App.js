@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { Home, PageNotFound } from './Containers';
+import { Home, CreateNewLocation, PageNotFound } from './Containers';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import 'bulma/sass/utilities/_all.sass';
 
@@ -12,6 +12,11 @@ const Routes = [
   {
     component: Home,
     path: '/',
+    exact: true,
+  },
+  {
+    component: CreateNewLocation,
+    path: '/location/create',
     exact: true,
   },
   // Add new paths here
